@@ -1,0 +1,2 @@
+/usr/bin/ar cr liblogger.a  CMakeFiles/logger.dir/domains/MyFirstDomain/src/CDump.cpp.o
+/usr/bin/ranlib liblogger.a

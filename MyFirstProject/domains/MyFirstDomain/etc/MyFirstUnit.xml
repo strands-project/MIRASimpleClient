@@ -1,0 +1,3 @@
+<root>
+    <unit id="MyUnitsName" class="myfirstdomain::MyFirstUnit" />
+</root>

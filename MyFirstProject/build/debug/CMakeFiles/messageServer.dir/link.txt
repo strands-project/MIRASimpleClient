@@ -1,0 +1,2 @@
+/usr/bin/ar cr libmessageServer.a  CMakeFiles/messageServer.dir/domains/MyFirstDomain/src/CMessageServer.cpp.o
+/usr/bin/ranlib libmessageServer.a

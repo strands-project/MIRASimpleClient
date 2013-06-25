@@ -1,0 +1,4 @@
+<root>
+<include file="/opt/MIRA-commercial/domains/robot/SCITOS/etc/SCITOSDriver.xml"/>
+    <unit id="float" class="myfirstdomain::floatProducer" />
+</root>

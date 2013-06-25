@@ -1,0 +1,2 @@
+/usr/bin/ar cr libMathFunctions.a  CMakeFiles/MathFunctions.dir/domains/MyFirstDomain/src/CMessageServer.cpp.o
+/usr/bin/ranlib libMathFunctions.a

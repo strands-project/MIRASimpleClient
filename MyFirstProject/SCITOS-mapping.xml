@@ -1,0 +1,43 @@
+<root>
+	<communication>
+		<Port>1234</Port>
+	</communication>
+
+	<link child="MapFrame" parent="/GlobalFrame">
+		<X>0</X>
+		<Y>0</Y>
+		<Phi>0</Phi>
+	</link>
+
+	<include file="${findpkg SCITOS}/etc/SCITOSDriver.xml"/>
+
+	<namespace name="robot">
+		<if_not frontLaser="none">
+			<namespace name="frontLaser">
+				<include file="${findpkg RangeFinder}/etc/RangeFinder-${frontLaser}.xml"/>
+				<parameter name="RangeFinder">
+					<Device>
+						<Device>${frontLaserDevice}</Device>
+					</Device>
+					<if_exists file="${frontLaserIgnoreIntervals}">
+						<include file="${frontLaserIgnoreIntervals}"/>
+					</if_exists>
+				</parameter>
+			</namespace>
+		</if_not>
+		<if_not rearLaser="none">
+			<namespace name="rearLaser">
+				<include file="${findpkg RangeFinder}/etc/RangeFinder-${rearLaser}.xml"/>
+				<parameter name="RangeFinder">
+					<Device>
+						<Device>${rearLaserDevice}</Device>
+					</Device>
+					<if_exists file="${rearLaserIgnoreIntervals}">
+						<include file="${rearLaserIgnoreIntervals}"/>
+					</if_exists>
+				</parameter>
+			</namespace>
+		</if_not>
+	</namespace>
+	<unit id="float" class="myfirstdomain::floatProducer" />
+</root>

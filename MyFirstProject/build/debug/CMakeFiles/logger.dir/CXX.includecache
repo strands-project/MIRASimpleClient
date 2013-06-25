@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/localhome/demo/MyFirstProject/domains/MyFirstDomain/src/CDump.cpp
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
+string.h
+-
+CDump.h
+/localhome/demo/MyFirstProject/domains/MyFirstDomain/src/CDump.h
+
+/localhome/demo/MyFirstProject/domains/MyFirstDomain/src/CDump.h
+ncurses.h
+-
+time.h
+-
+
